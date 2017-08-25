@@ -4,8 +4,8 @@ WWWROOT=$(ROOT_PATH)/wwwroot
 FLAGS=-D_DEBUG_
 LDFLAGS=-lpthread
 
-bin=httpd
-src=httpd.c main.c
+bin=http
+src=http.c main.c
 obj=$(shell echo $(src) | sed 's/\.c/\.o/g')
 
 $(bin):$(obj)
